@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <!-- Restrict Contact Creation in purchase Orders -->
+    <record id="view_purchase_order_form_restrict_creation" model="ir.ui.view">
+        <field name="name">purchase.order.form.restrict.creation</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+            <!-- Restrict product creation in purchase order line tree view -->
+            <xpath expr="//field[@name='order_line']/tree//field[@name='product_id']" position="attributes">
+                <attribute name="options">{'no_create': True}</attribute>
+            </xpath>
+
+            <!-- Restrict UoM creation in purchase order line form view -->
+            <xpath expr="//field[@name='order_line']/tree//field[@name='product_uom']" position="attributes">
+                <attribute name="options">{'no_create': True}</attribute>
+            </xpath>
+            <!-- Restrict contact creation in purchase order form view -->
+            <xpath expr="//field[@name='partner_id']" position="attributes">
+                <attribute name="options">{'no_create': True}</attribute>
+            </xpath>
+            <!-- Restrict currency creation in purchase order form view -->
+            <xpath expr="//field[@name='currency_id']" position="attributes">
+                <attribute name="options">{'no_create': True}</attribute>
+            </xpath>
+
+            <!-- Restrict user creation in purchase order form view -->
+            <xpath expr="//field[@name='user_id']" position="attributes">
+                <attribute name="options">{'no_create': True}</attribute>
+            </xpath>
+
+            <!-- Restrict incoterm creation in purchase order form view -->
+            <xpath expr="//field[@name='incoterm_id']" position="attributes">
+                <attribute name="options">{'no_create': True}</attribute>
+            </xpath>            
+
+
+        </field>
+    </record>
+    
+
+</odoo>
