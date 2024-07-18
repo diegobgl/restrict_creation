@@ -3,7 +3,7 @@
     'version': '1.2',
     'category': 'Customization',
     'summary': 'Restrict creation of new products and contacts in selection fields',
-    'author': 'I+D, Diego Gajardo, Camilo neira, Diego Morales',
+    'author': 'I+D, Diego Gajardo, Camilo Neira, Diego Morales',
     'website': 'https://www.holdconet.com',
     'depends': ['product', 'contacts', 'account', 'sale','purchase','stock'],
     'data': [
