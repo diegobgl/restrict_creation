@@ -36,7 +36,7 @@
 
     <record id="view_sale_order_form_hide_optional_products" model="ir.ui.view">
         <field name="name">sale.order.form.hide.optional.products</field>
-        <field name="model">sale.order</field>
+        <field name="model">sale.order.option</field>
         <field name="inherit_id" ref="sale.view_order_form"/>
         <field name="arch" type="xml">
             <!-- Ocultar la pestaña de productos opcionales -->
