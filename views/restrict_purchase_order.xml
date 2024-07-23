@@ -11,7 +11,7 @@
                 <attribute name="options">{'no_create': True}</attribute>
             </xpath>
             <!-- Restrict UoM creation in purchase order line tree view -->
-            <xpath expr="//field[@name='order_line']/tree//field[@name='product_uom']" position="attributes">
+            <xpath expr="//field[@name='order_line']/tree//field[@name='product_uom_category_id']" position="attributes">
                 <attribute name="options">{'no_create': True}</attribute>
             </xpath>
             <!-- Restrict contact creation in purchase order form view -->
