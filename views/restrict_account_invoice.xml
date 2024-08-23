@@ -16,6 +16,14 @@
                 <attribute name="options">{'no_create': True}</attribute>
             </xpath>
 
+             <!-- Restricción para el campo 'account_id' (cuenta contable) -->
+            <xpath expr="//field[@name='line_ids']/tree/field[@name='account_id']" position="attributes">
+                <attribute name="options">{'no_create': True}</attribute>
+            </xpath>
+            <!-- Restricción para el campo 'tax_ids' (impuestos) -->
+            <xpath expr="//field[@name='line_ids']/tree/field[@name='tax_ids']" position="attributes">
+                <attribute name="options">{'no_create': True}</attribute>
+            </xpath>
 
             <!-- Restrict UoM creation in invoice line form view -->
             <xpath expr="//field[@name='invoice_line_ids']/tree//field[@name='product_uom_id']" position="attributes">
