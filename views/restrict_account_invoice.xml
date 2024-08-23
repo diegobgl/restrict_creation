@@ -11,6 +11,12 @@
                 <attribute name="options">{'no_create': True}</attribute>
             </xpath>
 
+            <!-- Restrict partner  creation in invoice line form view -->
+            <xpath expr="//field[@name='invoice_line_ids']/tree//field[@name='partner_id']" position="attributes">
+                <attribute name="options">{'no_create': True}</attribute>
+            </xpath>
+
+
             <!-- Restrict account  creation in invoice line form view -->
             <xpath expr="//field[@name='invoice_line_ids']/tree//field[@name='account_id']" position="attributes">
                 <attribute name="options">{'no_create': True}</attribute>
@@ -75,10 +81,6 @@
             <xpath expr="//field[@name='source_id']" position="attributes">
                 <attribute name="options">{'no_create': True}</attribute>
             </xpath>
-
-            
-
-
         </field>
     </record>
 </odoo>
