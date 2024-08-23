@@ -11,7 +11,7 @@
         'views/restrict_purchase_order.xml',
         'views/restrict_sale_order_line.xml',
         'views/restrict_stock_picking.xml',
-        'views/restrict_purchase_order.xml',
+        'views/restrict_account_payment.xml',
         'views/res_config_settings_views.xml',
         'views/res_users_views.xml',
 
