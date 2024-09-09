@@ -22,9 +22,9 @@
             </xpath>
             <!-- Restricción para los campos en las líneas de pedido -->
             <xpath expr="//field[@name='order_line']/tree//field[@name='product_id']" position="attributes">
-                <attribute name="options">{'no_create': True}</attribute>
+                <attribute name="options">{'can_create': False}</attribute>
             </xpath>
-            <xpath expr="//field[@name='order_line']/tree//field[@name='product_uom_category_id']" position="attributes">
+            <xpath expr="//field[@name='order_line']/tree//field[@name='product_uom']" position="attributes">
                 <attribute name="options">{'no_create': True}</attribute>
             </xpath>
             <!-- Restricción para el campo user_id -->
